@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_gravity="left"
+      android:background="#96000500"
+
+  >
+
+    <ListView
+        android:id="@+id/listView1"
+      android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:textDirection="4"
+        android:layout_margin="20.0dip"
+        style="@style/WidgetListView"
+   
+       
+    >
+    </ListView>
+
+</LinearLayout>

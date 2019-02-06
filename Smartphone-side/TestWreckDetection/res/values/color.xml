@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#99FF33</color>
+    <color name="dark_green">#007A00</color>
+<color name="green_list">		#339933</color>
+<color name="green_transperant">#2E4C0F</color>
+<color name="divider_color">#FF339933</color>
+<color name="selected_list_item">	#23339933</color>
+<color name="contact_name_color">	#805CD65C</color>
+</resources>

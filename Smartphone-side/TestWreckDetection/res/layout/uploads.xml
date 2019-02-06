@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_background_1"
+    android:weightSum="100"
+   >
+
+<fragment
+    android:id="@+id/upload_list_fragment"
+    android:name="com.example.testwreckdetection.UploadListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+  android:layout_weight="95"
+  android:layout="@layout/upload_list_fragment" />
+
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        
+        android:background="@drawable/upload_border"
+        android:gravity="center|bottom"
+        android:orientation="horizontal" >
+
+ 
+
+    <LinearLayout
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+         
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/upload_camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_camera"
+             android:layout_gravity="center_vertical"
+         />
+<!--  
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/upload_camera_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="20dp"
+            android:text="@string/photo"
+            android:textColor="@color/divider_color"
+            android:textStyle="bold"
+            android:typeface="sans" />
+            -->
+    </LinearLayout>
+
+   <LinearLayout
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/upload_button_border"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+        <Button
+            
+            android:id="@+id/upload_video_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_video"
+            android:layout_gravity="center"
+           
+             />
+<!--  
+        <TextView
+            android:id="@+id/upload_video_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video"
+            android:textColor="@color/divider_color"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_gravity="center" />
+   
+     -->
+    </LinearLayout>
+<!--  
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upload_button_border"
+        android:orientation="vertical"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/upload_location_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_place"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/upload_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/location"
+            android:textColor="@color/divider_color"
+            android:textStyle="bold"
+            android:typeface="sans"
+             />
+    </LinearLayout>
+    
+    -->
+</LinearLayout>
+
+</LinearLayout>
+

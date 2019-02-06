@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testwreckdetection"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+     <uses-permission android:name="android.permission.READ_CONTACTS" />
+     <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+     
+     <permission  android:name="com.example.testmap.permission.MAPS_RECEIVE"
+    android:protectionLevel="signature" />
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+<!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:maxSdkVersion="19" android:name="android.permission.CAMERA"/>
+<uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" android:maxSdkVersion="19" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" android:maxSdkVersion="19"/>
+<uses-permission android:maxSdkVersion="19" android:name="android.permission.VIBRATE"/>
+<uses-permission android:maxSdkVersion="19" android:name="android.permission.SEND_SMS"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE" android:maxSdkVersion="19"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <meta-data
+    android:name="com.google.android.gms.version"
+    android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.example.testwreckdetection.Second_startup_Activity"
+            
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--  
+        
+         <activity 
+            android:name="com.example.testwreckdetection.Second_startup_Activity"
+             android:theme="@android:style/Theme.Black.NoTitleBar">
+      </activity>
+      -->
+         
+         
+        <activity 
+            android:name="com.example.testwreckdetection.ImageTextListViewActivity"
+            android:theme="@style/MyFloatingWindow"></activity>
+           <activity 
+            android:name="com.example.testwreckdetection.Uploads"
+            android:label="@string/upload_activity"
+           ></activity>
+            <activity
+      android:name=".MyLocationDemoActivity"
+      android:label="@string/send_loaction_activity"
+     />
+             <activity 
+            android:name="com.example.testwreckdetection.Activate_Accident_Detection"
+            android:label="@string/accident_detection_activity"
+             ></activity>
+              
+             <activity 
+            android:name="com.example.testwreckdetection.Setting"
+            android:label="@string/setting"
+            >
+                 
+             </activity>
+                 <activity 
+            android:name="com.example.testwreckdetection.HowTo"
+            android:label="@string/howto"
+            ></activity>
+                 
+                      <activity 
+            android:name="com.example.testwreckdetection.PlayVideo"
+            android:label="@string/howto"
+             ></activity>
+ <activity
+            android:name="com.example.testwreckdetection.ContactsListActivity"
+            android:label="@string/contacts_activity" >
+          
+             <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable_contacts" />
+        </activity>
+         <activity 
+            android:name="com.example.testwreckdetection.AddEmergencyContacts"
+            android:label="@string/contacts_activity"
+           ></activity>
+                 
+           <activity 
+            android:name="com.example.testwreckdetection.AccidentWreckConfirem"
+            android:label="@string/contacts_activity"
+           ></activity>
+                 <activity 
+            android:name="com.example.testwreckdetection.ServiceStatusActivity"
+            android:label="@string/service_status"
+             
+             android:exported="true" 
+             
+             
+             ></activity> 
+                        <activity 
+            android:name="com.example.testwreckdetection.ConfirmationScreen"
+            android:label="@string/confirm"
+            ></activity> 
+             <activity 
+            android:name="com.example.testwreckdetection.DeleteEmergencyContacts"
+          ></activity>
+                  
+                        
+ <service android:name="com.example.testwreckdetection.Accessing_Accelerometer_Sensor"></service>
+ <service android:name="com.example.testwreckdetection.Accessing_GPS_Reciever"></service>
+ <service android:name="com.example.testwreckdetection.Accessing_Microphone"></service>
+  <service android:name="com.example.testwreckdetection.SendSMSMessage"></service>
+  
+       <activity android:name="com.example.testwreckdetection.Video_Recorder"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:screenOrientation="landscape">
+        </activity>
+        <service android:name="com.example.testwreckdetection.RecorderService"></service>
+        
+        
+  <receiver android:name="com.example.testwreckdetection.MyWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+        <receiver
+            android:name="com.example.testwreckdetection.MyWidgetIntentReceiver"
+            android:label="widgetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="testwreckdetection.intent.action.CHANGE_PICTURE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+  
+  <activity 
+      android:name="com.example.testwreckdetection.Recording_Video"
+      android:screenOrientation="landscape"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+      ></activity>
+  
+  <activity 
+      android:name="com.example.testwreckdetection.TestConnection"
+      
+      ></activity>
+  <activity 
+      android:name="com.example.testwreckdetection.SpeedTestWithInterleavedPeriod"
+      
+      ></activity>  
+  
+  
+    <activity android:name="com.example.testwreckdetection.CameraRecorder"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:screenOrientation="landscape">
+        </activity>
+        
+        <service android:name="com.example.testwreckdetection.RecorderService"></service>
+             
+        
+  
+  
+  
+        <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD8xjWdpVtPIhfrC35vVxTvuA6-ApNRFbM">
+                        
+                    </meta-data>
+    </application>
+
+</manifest>

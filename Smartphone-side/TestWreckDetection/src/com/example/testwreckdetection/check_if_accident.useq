@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="accident_Detection_Confirmer" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="214" y="0"/>    
+    <execution id="2">      
+      <position height="178" width="198" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.example.testwreckdetection.ConfirmationScreen.CountdownTimerTask" 
+    project="TestWreckDetection" file="/TestWreckDetection/src/com/example/testwreckdetection/ConfirmationScreen.java" 
+    binary="false" label="countdownTimerTask" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="405" y="0"/>    
+    <execution id="4">      
+      <position height="136" width="147" x="207" y="120"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="162"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="214"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="676" width="147" x="207" y="292"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="com.example.testwreckdetection.ConfirmationScreen" project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/ConfirmationScreen.java" binary="false" 
+    label="testConfirmationScreen" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="405" y="0"/>    
+    <execution id="12">      
+      <position height="634" width="161" x="358" y="313"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="381"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="449"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="501"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="595"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="647"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="741"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="793"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="905"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="63" width="161" x="358" y="90"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="63" width="161" x="358" y="165"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="63" width="161" x="358" y="237"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="com.example.testwreckdetection.Connect_To_Server" project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Connect_To_Server.java" binary="false" label="sendToDB" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="725" y="0"/>    
+    <execution id="32">      
+      <position height="21" width="144" x="523" y="111"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="144" x="523" y="186"/>    
+    </execution>    
+    <execution id="38">      
+      <position height="21" width="144" x="523" y="258"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="CountdownTimerTask()">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="TimerTask()">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="updateUI():void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="11" operation="report(boolean):void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="cleanUp():void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="stopService(android.content.Intent):boolean">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="stopService(android.content.Intent):boolean">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="stopService(android.content.Intent):boolean">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="finish():void" x="443" y="863">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="31" 
+    operation="Connect_To_Server(android.content.Context,java.lang.String,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.Double,java.lang.String)">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="34" operation="doInBackground(com.example.testwreckdetection.ApiConnector[]):org.json.JSONObject">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="37" operation="onPostExecute(org.json.JSONObject):void" x="449" y="238">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>
+</sequence-diagram>

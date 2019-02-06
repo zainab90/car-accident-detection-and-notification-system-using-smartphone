@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+         android:background="@drawable/black_background_1">
+
+        <TextView android:text="@string/alert"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:textSize="30sp" 
+                android:layout_marginTop="20dp"
+                style="@style/confiremButton"/>
+        
+        <TextView android:text="@string/accident_title"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:textSize="20sp" android:layout_margin="20dp" 
+                android:lineSpacingExtra="2dp"
+                style="@style/confiremButton"/>
+
+        <ProgressBar
+                  android:id="@+id/progress_bar" 
+                android:layout_width="fill_parent" android:layout_height="15dp"
+                android:progressDrawable="@android:drawable/progress_horizontal"
+                android:indeterminateOnly="false" android:progress="0"
+                android:paddingLeft="20dp" android:paddingRight="20dp"/>
+        
+        <TextView android:id="@+id/time_remaining"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="" android:layout_gravity="center_horizontal"
+               style="@style/confiremText"/>
+ 
+        <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                android:id="@+id/button_bar" android:weightSum="2"
+                android:padding="20dp" >
+ 
+                <Button android:id="@+id/accident_true" android:text="@string/yes"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:textSize="20sp"
+                        android:padding="15dp"
+                         android:background="@color/divider_color" 
+                         android:layout_marginRight="5dp"/>
+         
+                <Button android:id="@+id/accident_false" android:text="@string/no"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:textSize="20sp"
+                        android:padding="15sp"
+                         android:background="@color/divider_color"/>
+        </LinearLayout>
+ 
+ <!--
+        <Button android:id="@+id/test_button" android:text="Test Dialog"
+                android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_centerVertical="true" 
+                android:textSize="24sp"
+                android:padding="20px"/>
+ -->
+ </LinearLayout>
+

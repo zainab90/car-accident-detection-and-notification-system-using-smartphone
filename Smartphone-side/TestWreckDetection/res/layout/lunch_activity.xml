@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical" >
+ 
+    
+    <RelativeLayout 
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/sreviceStatus"
+        android:textColor="@color/divider_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <Switch
+        android:id="@+id/switch_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:background="@color/divider_color"
+        android:checked="true"
+        android:text=""
+        tools:ignore="NewApi" />
+    </RelativeLayout>
+    
+    
+    
+    
+    
+    
+
+    <TextView
+        android:id="@+id/txt_max_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time is:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+    <TextView
+        android:id="@+id/tv_accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer :"
+        android:layout_margin="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+  
+
+    
+  
+    
+    
+    <TextView
+        android:id="@+id/txt_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed label"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="15dp" 
+               />
+         
+
+
+    <TextView
+        android:id="@+id/txt_distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Coordinate:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_margin="15dp" />
+         
+
+    <TextView
+        android:id="@+id/tv_SD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard deviation is :"
+              android:layout_margin="10dp"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    <TextView
+        android:id="@+id/tv_speed_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed Status is :"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+         
+    
+    <TextView
+        android:id="@+id/tv_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Db level is :"
+         android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+                 />
+         
+    
+    
+</LinearLayout>

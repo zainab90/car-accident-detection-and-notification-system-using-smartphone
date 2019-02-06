@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"  >
+
+ <shape
+      android:shape="line">
+   
+    <corners android:radius="4.0dip" />
+    
+ <gradient
+        android:angle="180"
+        android:startColor="@color/divider_color"
+        android:centerColor="@color/divider_color"
+        android:endColor="@color/divider_color"/>
+
+</shape>
+
+</inset>

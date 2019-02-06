@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.example.testwreckdetection.Activate_Accident_Detection" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Activate_Accident_Detection.java" binary="false" 
+    label="activateDetectionServices" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="153" y="0"/>    
+    <execution id="2">      
+      <position height="105" width="173" x="5" y="84"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="241" width="173" x="5" y="224"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="451" width="173" x="5" y="510"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.example.testwreckdetection.Accessing_GPS_Reciever" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accessing_GPS_Reciever.java" binary="false" 
+    label="locationService" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="389" y="0"/>    
+    <execution id="4">      
+      <position height="63" width="144" x="182" y="105"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="199" width="144" x="182" y="245"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="329"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="409" width="144" x="182" y="531"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="825"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="android.location.Location" project="TestWreckDetection" 
+    file="E:/adt-bundle-windows-x86_64-20140702/adt-bundle-windows-x86_64-20140702/sdk/platforms/android-19/android.jar" 
+    binary="true" label="l" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="552"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="594"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="636"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="678"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="720"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="898"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="762"/>    
+    </execution>  
+  </object>  
+  <object id="38" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="mAccidentWreckDetection" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="856"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="com.google.android.gms.location.LocationClient" project="TestWreckDetection" 
+    file="D:/workspace/google-play-services_lib/libs/google-play-services.jar" binary="true" label="mLocationClient" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="126"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="402"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="accident_Detection_Confirmer" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="534" y="0"/>  
+  </object>  
+  <message id="3" operation="onConnected(android.os.Bundle):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="onStartCommand(android.content.Intent,int,int):int">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="onLocationChanged(android.location.Location):void">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" 
+    operation="requestLocationUpdates(com.google.android.gms.location.LocationRequest,com.google.android.gms.location.LocationListener):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="connect():void">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="hasAccuracy():boolean">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="getAccuracy():float">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="getSpeed():float">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="getLatitude():double">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="getLongitude():double">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="get(android.content.Context):com.example.testwreckdetection.Accident_Detection_Confirmer">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="checkTheSpeed(double,android.location.Location):void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="getSpeed():float">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>
+</sequence-diagram>

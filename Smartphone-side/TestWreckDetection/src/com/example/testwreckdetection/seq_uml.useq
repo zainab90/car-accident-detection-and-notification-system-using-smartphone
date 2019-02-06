@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true" automaticImage="JPEG">  
+  <object id="1" language="java" name="com.example.testwreckdetection.Activate_Accident_Detection" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Activate_Accident_Detection.java" binary="false" 
+    label="activateDetectionServices" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="12" y="0"/>    
+    <execution id="2">      
+      <position height="199" width="173" x="5" y="156"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.example.testwreckdetection.Accessing_Accelerometer_Sensor" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accessing_Accelerometer_Sensor.java" binary="false" 
+    label="accelerationService" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="209" y="0"/>    
+    <execution id="4">      
+      <position height="157" width="144" x="182" y="177"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="261"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="198"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="mAccidentWreckDetection" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="292"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="onSensorChanged(android.hardware.SensorEvent):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="get(android.content.Context):com.example.testwreckdetection.Accident_Detection_Confirmer">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="checkTheAcceleration(double):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>
+</sequence-diagram>

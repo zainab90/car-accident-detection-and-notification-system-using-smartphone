@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+     <CheckBoxPreference
+       android:title="@string/SendVideo" 
+       android:key="checkbox"
+       android:summary="send video after accident detection"
+       android:defaultValue="true"
+       ></CheckBoxPreference>
+    
+     <CheckBoxPreference
+       android:title="@string/SendSMS" 
+       android:key="checkbox_sms_loc"
+       android:summary="Send SMS to your Emergency Contacts after an Accident occure"
+       android:defaultValue="true"
+       ></CheckBoxPreference>
+    
+
+</PreferenceScreen>

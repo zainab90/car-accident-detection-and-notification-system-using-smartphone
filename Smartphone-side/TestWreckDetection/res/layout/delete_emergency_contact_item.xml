@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp" >
+    
+     <ImageView
+         android:layout_marginTop="3dp"
+        android:id="@+id/delete_emergency_contact_icon"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+         android:layout_width="?android:attr/listPreferredItemHeight"
+        android:contentDescription="@string/image"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_contact_picture_holo_light"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="3dp"
+        />
+ 
+    <TextView
+        android:id="@+id/delete_emergency_contact_name"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/delete_emergency_contact_icon"
+                 android:gravity="center_vertical"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:layout_alignWithParentIfMissing="true"
+              android:fontFamily="sans-serif-light"
+              android:singleLine="true"
+              android:ellipsize="marquee"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textColor="@color/contact_name_color"
+              />
+
+
+
+ <TextView
+     android:id="@+id/delete_emergency_contact_number"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/delete_emergency_contact_name"
+     
+      android:layout_toRightOf="@+id/delete_emergency_contact_icon"
+     
+     android:ellipsize="marquee"
+     android:fontFamily="sans-serif-light"
+     android:singleLine="true"
+     android:textColor="@color/contact_name_color"
+     android:textSize="17sp" />
+
+ <CheckBox android:text=""
+     android:id="@+id/icon_remove"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+android:focusable="false"
+android:focusableInTouchMode="false"
+ android:layout_alignParentLeft="true"
+     android:layout_marginRight="20dp"
+     android:layout_marginTop="10dp"
+     
+    />
+
+</RelativeLayout>

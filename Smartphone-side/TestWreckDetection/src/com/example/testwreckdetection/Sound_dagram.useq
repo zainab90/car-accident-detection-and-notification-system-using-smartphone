@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.7" icons="true">  
+  <object id="1" language="java" name="com.example.testwreckdetection.Activate_Accident_Detection" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Activate_Accident_Detection.java" binary="false" 
+    label="activateDetectionServices" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="220" y="0"/>    
+    <execution id="2">      
+      <position height="199" width="173" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.example.testwreckdetection.Accessing_Microphone" project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accessing_Microphone.java" binary="false" 
+    label="soundService" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="293" y="0"/>    
+    <execution id="4">      
+      <position height="157" width="144" x="182" y="120"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="204"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="com.example.testwreckdetection.SplEngine" project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/SplEngine.java" binary="false" label="mEngin" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="141"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="235"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="755" width="144" x="330" y="265"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="com.example.testwreckdetection.SplEngine" project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/SplEngine.java" binary="false" label="splEngine" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="442" y="0"/>    
+    <execution id="15">      
+      <position height="713" width="144" x="478" y="286"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="412"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="android.media.AudioRecord" project="TestWreckDetection" 
+    file="E:/adt-bundle-windows-x86_64-20140702/adt-bundle-windows-x86_64-20140702/sdk/platforms/android-19/android.jar" 
+    binary="true" label="mRecordInstance" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="307"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="349"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="915"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="957"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="android.os.Handler" project="TestWreckDetection" 
+    file="E:/adt-bundle-windows-x86_64-20140702/adt-bundle-windows-x86_64-20140702/sdk/platforms/android-19/android.jar" 
+    binary="true" label="mHandle" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="33" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="747"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="com.example.testwreckdetection.Accident_Detection_Confirmer" 
+    project="TestWreckDetection" 
+    file="/TestWreckDetection/src/com/example/testwreckdetection/Accident_Detection_Confirmer.java" binary="false" 
+    label="maccAccidentWreckDetection" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="789"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="onStartCommand(android.content.Intent,int,int):int">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="SplEngine(android.os.Handler,android.content.Context)">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="getApplicationContext():android.content.Context">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="start_engine():void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="14" operation="run():void">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="17" operation="startRecording():void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="read(short[],int,int):int">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="round(double,int):double">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="get(android.content.Context):com.example.testwreckdetection.Accident_Detection_Confirmer">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="checkSoundLevel(double):void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="stop():void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="release():void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>
+</sequence-diagram>

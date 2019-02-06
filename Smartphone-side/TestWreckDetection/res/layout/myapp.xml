@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <FrameLayout
+            android:id="@+id/videoview" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+            
+    <SurfaceView
+        android:id="@+id/sview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
+
+  <View android:layout_width="15dp"
+    android:layout_height="15dp"
+    android:background="@drawable/circle"
+    android:layout_margin="12dp"
+    android:id="@+id/circle"
+    />
+    <TextView
+        android:id="@+id/bstartRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/circle"
+      android:layout_margin="10dp"
+        android:text="@string/rec_"
+        android:textColor="@android:color/black"
+        android:fontFamily="bold" 
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/timeRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:textColor="@android:color/black"
+        android:fontFamily="bold" 
+        android:textSize="30sp"
+        android:text=""
+       android:layout_margin="5dp"
+              android:layout_alignParentRight="true"
+        
+        android:layout_below="@+id/bstartRec" />
+
+</RelativeLayout>

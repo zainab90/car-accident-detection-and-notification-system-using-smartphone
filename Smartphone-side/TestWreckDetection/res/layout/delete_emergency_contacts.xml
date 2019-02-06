@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        android:background="@drawable/black_background_1" >
+    
+    <ListView
+        android:id="@+id/DeletelistView1"
+      android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:textDirection="4"
+        style="@style/WidgetListView" 
+      
+    >
+    </ListView>
+
+</LinearLayout>
